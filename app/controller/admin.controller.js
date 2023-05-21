@@ -19,10 +19,9 @@ class admin {
   };
   static all = async (req, res) => {
     try {
-      const allUsers = await userModel.find();
       res.status(200).send({
         apiStatus: true,
-        data: allUsers,
+ 
         message: "all data fetched",
       });
     } catch (e) {
